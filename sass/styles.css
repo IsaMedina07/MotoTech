@@ -325,7 +325,6 @@ section[id=section-why] {
       -ms-flex-pack: center;
           justify-content: center;
   background: #CFF1F9;
-  padding: 20px 0;
 }
 section[id=section-why] .img-why {
   width: 70%;
