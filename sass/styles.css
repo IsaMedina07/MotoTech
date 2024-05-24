@@ -410,17 +410,19 @@ section[id=section-why] .description-why p {
   }
 }
 
-section[id=section-hunter] {
-  width: 90%;
+section[id=section-hunter],
+section[id=section-mt],
+section[id=section-triumph] {
+  width: 100%;
   height: 100vh;
-  margin: 20px auto;
+  margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -webkit-box-align: center;
@@ -430,5 +432,61 @@ section[id=section-hunter] {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1.25rem;
-  margin-top: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section[id=section-hunter] .container,
+section[id=section-mt] .container,
+section[id=section-triumph] .container {
+  width: 90%;
+  min-height: 70%;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 20px;
+}
+section[id=section-hunter] .container .img-container,
+section[id=section-mt] .container .img-container,
+section[id=section-triumph] .container .img-container {
+  width: 90%;
+}
+section[id=section-hunter] .container .img-container img,
+section[id=section-mt] .container .img-container img,
+section[id=section-triumph] .container .img-container img {
+  border-radius: 20px;
+  width: 100%;
+}
+section[id=section-hunter] .container .description-container,
+section[id=section-mt] .container .description-container,
+section[id=section-triumph] .container .description-container {
+  width: 90%;
+}
+
+section[id=section-hunter] {
+  background-image: url("../img/HNTR_background.webp");
+}
+
+section[id=section-mt] {
+  background-image: url("../img/mt-back.webp");
+}
+
+section[id=section-triumph] {
+  background-image: url("../img/triumph-background.jpg");
 }
