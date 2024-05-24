@@ -204,7 +204,7 @@ body {
 section[id=section-welcome] {
   width: 90%;
   height: 100vh;
-  margin: 100px auto;
+  margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +221,6 @@ section[id=section-welcome] {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1.25rem;
-  padding: 100px 0;
 }
 section[id=section-welcome] .img-welcome-to {
   width: 70%;
