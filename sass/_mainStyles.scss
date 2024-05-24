@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --theme-color: rgb(1, 113, 173);
+    --back-section: #CFF1F9;
+    --gray-color: #1b1f2259;
+    --black-color: #0B090A;
+    --gradient-nav: linear-gradient(135deg,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); 
+}
+
+body {
+    min-width: 100vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: nowrap;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 1.25rem;
+}
+
+/* Clase para deshabilitar el scroll */
+.no-scroll {
+    overflow: hidden;
+}
