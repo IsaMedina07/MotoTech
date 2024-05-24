@@ -6,4 +6,17 @@ $(document).ready(function(){
             document.body.classList.remove('no-scroll');
         }
     });
+
+    function checkOrientation() {
+        if (window.innerHeight > window.innerWidth) {
+            document.getElementById('content').style.display = 'block';
+        } else {
+            document.getElementById('content').style.display = 'none';
+            alert("Por favor, gira tu dispositivo a modo vertical.");
+        }
+    }
+    
+    window.addEventListener('resize', checkOrientation);
+    window.addEventListener('load', checkOrientation);
+    
 })
