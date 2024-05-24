@@ -321,11 +321,13 @@ section[id=section-why] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #CFF1F9;
   text-align: center;
+  padding-bottom: 20px;
+  padding: 0px 5%;
 }
 section[id=section-why] .img-why {
   width: 70%;
@@ -434,6 +436,7 @@ section[id=section-triumph] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 section[id=section-hunter] .container,
 section[id=section-mt] .container,
@@ -461,6 +464,40 @@ section[id=section-triumph] .container {
       justify-content: space-around;
   gap: 20px;
 }
+@media screen and (min-width: 400px) {
+  section[id=section-hunter] .container,
+  section[id=section-mt] .container,
+  section[id=section-triumph] .container {
+    width: 70%;
+  }
+  section[id=section-hunter] .container .img-container,
+  section[id=section-mt] .container .img-container,
+  section[id=section-triumph] .container .img-container {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 735px) {
+  section[id=section-hunter] .container,
+  section[id=section-mt] .container,
+  section[id=section-triumph] .container {
+    width: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px;
+  }
+  section[id=section-hunter] .container .img-container,
+  section[id=section-mt] .container .img-container,
+  section[id=section-triumph] .container .img-container {
+    max-width: 100%;
+  }
+  section[id=section-hunter] .container .description-container,
+  section[id=section-mt] .container .description-container,
+  section[id=section-triumph] .container .description-container {
+    max-width: 70%;
+  }
+}
 section[id=section-hunter] .container .img-container,
 section[id=section-mt] .container .img-container,
 section[id=section-triumph] .container .img-container {
@@ -480,6 +517,7 @@ section[id=section-triumph] .container .description-container {
 
 section[id=section-hunter] {
   background-image: url("../img/HNTR_background.webp");
+  padding: 20px 0px;
 }
 
 section[id=section-mt] {
