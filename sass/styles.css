@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
@@ -34,10 +35,19 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1rem 1.25rem;
 }
 .header-navigation .log {
@@ -64,6 +74,7 @@ body {
   height: 5px;
   background: var(--gradient-nav);
   position: relative;
+  -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
 .header-navigation label.menu .caja2 {
@@ -80,7 +91,9 @@ body {
   position: fixed;
 }
 .header-navigation input[type=checkbox]:checked ~ label.menu .caja1 {
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
   top: 10px;
 }
 .header-navigation input[type=checkbox]:checked ~ label.menu .caja2 {
@@ -88,7 +101,9 @@ body {
   left: -70%;
 }
 .header-navigation input[type=checkbox]:checked ~ label.menu .caja3 {
-  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
   top: 0px;
 }
 .header-navigation input[type=checkbox]:checked ~ nav {
@@ -102,17 +117,27 @@ body {
   top: 0;
   left: 100%;
   background: var(--theme-color);
+  -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
 .header-navigation nav ul {
   width: 100%;
   height: 75%;
   margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .header-navigation nav ul li a {
   color: var(--gray-color);
@@ -146,10 +171,19 @@ body {
     width: 100%;
     height: 100%;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 1.875em;
   }
   .header-navigation nav ul li {
@@ -161,6 +195,7 @@ body {
     padding-bottom: 10px;
     border-bottom: 1.3px solid transparent;
     border-radius: 0.7px;
+    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
 }
@@ -170,11 +205,21 @@ section[id=section-welcome] {
   height: 100vh;
   margin: 0px auto;
   padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 section[id=section-welcome] .img-welcome-to {
   width: 70%;
@@ -185,11 +230,21 @@ section[id=section-welcome] .img-welcome-to svg {
 }
 section[id=section-welcome] .description-welcome {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 1.25rem;
 }
 section[id=section-welcome] .description-welcome h2 {
@@ -203,7 +258,10 @@ section[id=section-welcome] .description-welcome p {
 }
 @media screen and (min-width: 700px) {
   section[id=section-welcome] {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   section[id=section-welcome] .img-welcome-to {
     width: 50%;
@@ -215,11 +273,21 @@ section[id=section-welcome] .description-welcome p {
   section[id=section-welcome] .description-welcome {
     width: 50%;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 1.25rem;
   }
   section[id=section-welcome] .description-welcome h2 {
@@ -240,11 +308,21 @@ section[id=section-why] {
   width: 90%;
   height: 100vh;
   margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1.25rem;
   margin-top: 100px;
 }
@@ -257,11 +335,21 @@ section[id=section-why] .img-why svg {
 }
 section[id=section-why] .description-why {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 1.25rem;
 }
 section[id=section-why] .description-why h2 {
@@ -275,7 +363,10 @@ section[id=section-why] .description-why p {
 }
 @media screen and (min-width: 700px) {
   section[id=section-why] {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   section[id=section-why] .img-why {
     width: 50%;
@@ -287,11 +378,21 @@ section[id=section-why] .description-why p {
   section[id=section-why] .description-why {
     width: 50%;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 1.25rem;
   }
   section[id=section-why] .description-why h2 {
@@ -312,13 +413,21 @@ section[id=section-hunter] {
   width: 90%;
   height: 100vh;
   margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1.25rem;
   margin-top: 100px;
 }
-
-/*# sourceMappingURL=styles.css.map */

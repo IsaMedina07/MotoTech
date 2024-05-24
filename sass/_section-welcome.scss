@@ -1,15 +1,15 @@
-section[id="section-what"] {
+section[id="section-welcome"] {
     width: 90%;
     height: 100vh;
-    margin: 10px auto;
+    margin: 0px auto;
+    padding-top: 100px;
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
-    gap: 1.25rem;
+    justify-content: flex-start;
 
-    .img-what-is {
+    .img-welcome-to {
         width: 70%;
         text-align: center;
         svg{
@@ -17,7 +17,7 @@ section[id="section-what"] {
         }
     }
 
-    .description-what {
+    .description-welcome {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -42,7 +42,7 @@ section[id="section-what"] {
     @media screen and (min-width: 700px) {
         flex-direction: row;
 
-        .img-what-is {
+        .img-welcome-to {
             width: 50%;
             text-align: center;
             svg{
@@ -50,7 +50,7 @@ section[id="section-what"] {
             }
         }
 
-        .description-what {
+        .description-welcome {
             width: 50%;
             text-align: center;
             display: flex;
