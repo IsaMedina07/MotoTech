@@ -245,8 +245,9 @@ section[id=section-why] {
   flex-direction: column-reverse;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   background: #CFF1F9;
+  text-align: center;
 }
 section[id=section-why] .img-why {
   width: 70%;
