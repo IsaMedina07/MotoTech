@@ -22,6 +22,7 @@ body {
   font-size: 16px;
   text-align: center;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* Clase para deshabilitar el scroll */
@@ -168,13 +169,14 @@ body {
 section[id=section-welcome] {
   width: 90%;
   height: 100vh;
-  margin: 0px auto;
-  padding-top: 100px;
+  margin: 100px auto;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 100px 0;
 }
 section[id=section-welcome] .img-welcome-to {
   width: 70%;
