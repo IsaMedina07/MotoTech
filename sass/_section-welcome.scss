@@ -10,19 +10,22 @@ section[id="section-welcome"] {
     padding: 0px 5%;
     // padding-bottom: 300px;
     // padding-top: 200px;
-    background: url('../img/main-background.jpg');
+    background: #CFF1F9;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
 
     .img-welcome-to {
         width: 70%;
         text-align: center;
-        svg{
+
+        svg {
             width: 100%;
         }
-        img{
+
+        img {
             width: 100%;
         }
     }
@@ -42,9 +45,16 @@ section[id="section-welcome"] {
             font-family: "Playfair Display", serif;
             font-weight: 400;
             font-style: normal;
-            color: #f2f2f2;
+
+            // color: #f2f2f2;
+            .tech {
+                background: linear-gradient(rgb(29, 146, 255), rgb(70, 70, 255), black);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
         }
-        p{
+
+        p {
             font-size: 1rem;
             display: none;
         }
@@ -56,10 +66,12 @@ section[id="section-welcome"] {
         .img-welcome-to {
             width: 50%;
             text-align: center;
-            svg{
+
+            svg {
                 width: 100%;
             }
-            img{
+
+            img {
                 width: 70%;
             }
         }
@@ -73,7 +85,7 @@ section[id="section-welcome"] {
             align-items: center;
             justify-content: space-between;
             gap: 1.25rem;
-    
+
             h2 {
                 font-size: 5rem;
                 // font-family: "Jacquard 12", system-ui;
@@ -83,7 +95,8 @@ section[id="section-welcome"] {
                 font-style: normal;
                 text-align: start;
             }
-            p{
+
+            p {
                 font-size: 1.25rem;
                 text-align: start;
                 font-family: "Lato", sans-serif;

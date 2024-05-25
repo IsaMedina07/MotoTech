@@ -120,7 +120,7 @@ body {
   font-weight: 500;
 }
 .header-navigation nav ul li .link {
-  color: #84A9FB;
+  color: #41a9c0;
 }
 .header-navigation nav ul li a:active {
   background: #000;
@@ -195,7 +195,7 @@ section[id=section-welcome] {
           justify-content: center;
   margin: 0px auto;
   padding: 0px 5%;
-  background: url("../img/main-background.jpg");
+  background: #CFF1F9;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -233,7 +233,12 @@ section[id=section-welcome] .description-welcome h2 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-style: normal;
-  color: #f2f2f2;
+}
+section[id=section-welcome] .description-welcome h2 .tech {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(29, 146, 255)), color-stop(rgb(70, 70, 255)), to(black));
+  background: linear-gradient(rgb(29, 146, 255), rgb(70, 70, 255), black);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 section[id=section-welcome] .description-welcome p {
   font-size: 1rem;
@@ -501,7 +506,7 @@ section[id=section-triumph] .container .description-container {
 }
 
 section[id=section-hunter] {
-  background-image: url("../img/HNTR_background.webp");
+  background-image: url("../img/hunter350.jpg");
   padding: 20px 0px;
 }
 
