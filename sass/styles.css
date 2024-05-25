@@ -503,6 +503,81 @@ section[id=section-hunter] .container .description-container,
 section[id=section-mt] .container .description-container,
 section[id=section-triumph] .container .description-container {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.25rem;
+}
+section[id=section-hunter] .container .description-container .title-main h2,
+section[id=section-mt] .container .description-container .title-main h2,
+section[id=section-triumph] .container .description-container .title-main h2 {
+  color: var(--black-color);
+  font-size: 2.5rem;
+}
+section[id=section-hunter] .container .description-container .characteristics,
+section[id=section-mt] .container .description-container .characteristics,
+section[id=section-triumph] .container .description-container .characteristics {
+  width: 80%;
+  padding: 10px 0;
+}
+section[id=section-hunter] .container .description-container .characteristics p,
+section[id=section-mt] .container .description-container .characteristics p,
+section[id=section-triumph] .container .description-container .characteristics p {
+  font-size: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  section[id=section-hunter] .container .description-container .characteristics,
+  section[id=section-mt] .container .description-container .characteristics,
+  section[id=section-triumph] .container .description-container .characteristics {
+    width: 50%;
+  }
+}
+section[id=section-hunter] .container .description-container .btn-see-more,
+section[id=section-mt] .container .description-container .btn-see-more,
+section[id=section-triumph] .container .description-container .btn-see-more {
+  padding: 5px;
+  background: #CFF1F9;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  border: 1px inset #0f0505;
+}
+section[id=section-hunter] .container .description-container .btn-see-more a,
+section[id=section-mt] .container .description-container .btn-see-more a,
+section[id=section-triumph] .container .description-container .btn-see-more a {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  color: var(--black-color);
+}
+@media screen and (min-width: 1000px) {
+  section[id=section-hunter] .container .description-container .btn-see-more,
+  section[id=section-mt] .container .description-container .btn-see-more,
+  section[id=section-triumph] .container .description-container .btn-see-more {
+    width: 50%;
+  }
 }
 
 section[id=section-hunter] {
