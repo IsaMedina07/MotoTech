@@ -1,6 +1,7 @@
 .header-navigation {
     // width: 100%;
-    // min-height: auto;
+    // min-height: 65px;
+    // position: fixed;
     // margin: 0 auto;
     // background: transparent;
     // display: flex;
@@ -9,6 +10,8 @@
     // justify-content: space-between;
     // padding: 1rem 1.25rem;
     // // background-color: #ade8f483;
+    // backdrop-filter: blur(5px);
+    // background: rgba($color: #fff, $alpha: 0.3);
 
 
     // OCULTAMOS EL checkbox Y EL nav ------- -------
@@ -81,7 +84,8 @@
         z-index: 1;
         top: 0;
         left: 100%;
-        background: var(--theme-color);
+        backdrop-filter: blur(5px);
+        background: rgba($color: #355070, $alpha: 0.3);
         transition: all 400ms ease;
 
         ul {
@@ -97,17 +101,19 @@
             li {
                 a {
                     color: var(--gray-color);
-                    font-size: 1.25rem;
                     font-weight: 500;
                 }
 
                 .link {
-                    // color: #84A9FB;
-                    color: #41a9c0;
+                    // color: #41a9c0;
+                    color: var(--black-color);
+                    color: #f2f2f2;
+                    font-size: 1.625rem;
+                    font-weight: 500;
                 }
 
                 a:active {
-                    background: #000;
+                    background: #d3c9c9a2;
                 }
             }
         }

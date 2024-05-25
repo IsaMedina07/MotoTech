@@ -85,7 +85,8 @@ body {
   z-index: 1;
   top: 0;
   left: 100%;
-  background: var(--theme-color);
+  backdrop-filter: blur(5px);
+  background: rgba(53, 80, 112, 0.3);
   transition: all 400ms ease;
 }
 .header-navigation nav ul {
@@ -100,14 +101,16 @@ body {
 }
 .header-navigation nav ul li a {
   color: var(--gray-color);
-  font-size: 1.25rem;
   font-weight: 500;
 }
 .header-navigation nav ul li .link {
-  color: #41a9c0;
+  color: var(--black-color);
+  color: #f2f2f2;
+  font-size: 1.625rem;
+  font-weight: 500;
 }
 .header-navigation nav ul li a:active {
-  background: #000;
+  background: rgba(211, 201, 201, 0.6352941176);
 }
 @media screen and (min-width: 735px) {
   .header-navigation label {
