@@ -159,9 +159,10 @@ section[id=section-welcome] {
   justify-content: center;
   margin: 0px auto;
   padding: 0px 5%;
-  background: url("https://img.freepik.com/vector-gratis/fondo-lineas-movimiento-velocidad-horizontal-azul_1017-36705.jpg");
+  background: url("../img/main-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 section[id=section-welcome] .img-welcome-to {
   width: 70%;
