@@ -119,16 +119,18 @@ body {
   .header-navigation nav {
     position: fixed;
     top: -20px;
-    left: 50vw;
+    left: 65vw;
     padding: 0 0.625rem;
     width: auto;
     height: auto;
+    backdrop-filter: blur(0px);
     background: transparent;
+    color: #355070;
   }
 }
-@media screen and (min-width: 735px) and (max-width: 870px) {
+@media screen and (min-width: 735px) and (max-width: 900px) {
   .header-navigation nav {
-    left: 33vw;
+    left: 55vw;
   }
 }
 @media screen and (min-width: 735px) {
@@ -146,8 +148,12 @@ body {
     padding: 0px;
     margin-bottom: 0px;
   }
+  .header-navigation nav ul li .link {
+    background: linear-gradient(rgb(70, 70, 255), rgb(29, 146, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
   .header-navigation nav ul li a {
-    color: var(--black-color);
     transition: all 500ms ease;
   }
 }
@@ -458,9 +464,15 @@ section[id=section-hunter] {
 section[id=section-mt] {
   background-image: url("../img/mt-back.webp");
 }
+@media screen and (min-width: 735px) {
+  section[id=section-mt] .container {
+    flex-direction: row-reverse;
+  }
+}
 
 section[id=section-triumph] {
   background-image: url("../img/triumph-background.jpg");
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

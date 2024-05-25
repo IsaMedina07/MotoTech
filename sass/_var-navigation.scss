@@ -128,15 +128,18 @@
             // position: relative;
             position: fixed;
             top: -20px;
-            left: 50vw;
+            left: 65vw;
             // left: 0;
             padding: 0 0.625rem;
             width: auto;
             height: auto;
+            backdrop-filter: blur(0px);    
             background: transparent;
+            color: #355070;
+            
 
-            @media screen and (max-width:870px) {
-                left: 33vw;
+            @media screen and (max-width:900px) {
+                left: 55vw;
             }
 
             ul {
@@ -152,9 +155,12 @@
                 li {
                     padding: 0px;
                     margin-bottom: 0px;
-
+                    .link {
+                        background: linear-gradient(rgb(70, 70, 255),rgb(29, 146, 255));
+                        -webkit-background-clip: text;
+                        color: transparent;
+                    }
                     a {
-                        color: var(--black-color);
                         transition: all 500ms ease;
                     }
                 }

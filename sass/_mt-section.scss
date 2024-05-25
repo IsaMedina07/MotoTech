@@ -1,3 +1,8 @@
 section[id="section-mt"]{
     background-image: url('../img/mt-back.webp');
+    @media screen and (min-width:735px){
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
 }
