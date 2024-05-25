@@ -1,24 +1,15 @@
 .header-navigation {
-    width: 100%;
-    // min-height: 70px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: transparent;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1.25rem;
-    // background-color: #ade8f483;
+    // width: 100%;
+    // min-height: auto;
+    // margin: 0 auto;
+    // background: transparent;
+    // display: flex;
+    // flex-flow: row nowrap;
+    // align-items: center;
+    // justify-content: space-between;
+    // padding: 1rem 1.25rem;
+    // // background-color: #ade8f483;
 
-    // Logo ------------------  ----------------
-    .log {
-        min-width: 40px;
-
-        img {
-            max-width: 40px;
-        }
-    }
 
     // OCULTAMOS EL checkbox Y EL nav ------- -------
     input[type="checkbox"] {
@@ -107,6 +98,11 @@
                 a {
                     color: var(--gray-color);
                     font-size: 1.25rem;
+                    font-weight: 500;
+                }
+
+                .link {
+                    color: #84A9FB;
                 }
 
                 a:active {
@@ -117,49 +113,46 @@
     }
 
     @media screen and (min-width:735px) {
-            label {
-                display: none;
+        label {
+            display: none;
+        }
+
+        nav {
+            // position: relative;
+            position: fixed;
+            top: -20px;
+            left: 50vw;
+            // left: 0;
+            padding: 0 0.625rem;
+            width: auto;
+            height: auto;
+            background: transparent;
+
+            @media screen and (max-width:870px) {
+                left: 33vw;
             }
 
-            nav {
-                // position: relative;
-                position: fixed;
-                top: -20px;
-                left: 50vw;
-                // left: 0;
-                padding: 0 0.625rem;
-                width: auto;
-                height: auto;
-                background: transparent;
-                border-bottom: 1px solid var(--gray-color);
-                @media screen and (max-width:870px) {
-                    left: 33vw;
-                }
+            ul {
+                width: 100%;
+                height: 100%;
+                list-style: none;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: center;
+                gap: 1.875em;
 
-                ul {
-                    width: 100%;
-                    height: 100%;
-                    list-style: none;
-                    display: flex;
-                    flex-flow: row nowrap;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 1.875em;
+                li {
+                    padding: 0px;
+                    margin-bottom: 0px;
 
-                    li {
-                        padding: 0px;
-                        margin-bottom: 0px;
-
-                        a {
-                            color: var(--black-color);
-                            padding-bottom: 10px;
-                            border-bottom: 1.3px solid transparent;
-                            border-radius: .7px;
-                            transition: all 500ms ease;
-                        }
+                    a {
+                        color: var(--black-color);
+                        transition: all 500ms ease;
                     }
                 }
             }
-        
+        }
+
     }
 }

@@ -1,16 +1,16 @@
 section[id="section-why"] {
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     margin: 0px auto;
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     background: #CFF1F9;
     text-align: center;
-    padding-bottom: 20px;
     padding: 0px 5%;
+    display: none;
 
     .img-why {
         width: 70%;

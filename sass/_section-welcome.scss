@@ -8,12 +8,20 @@ section[id="section-welcome"] {
     justify-content: center;
     margin: 0px auto;
     padding: 0px 5%;
-    text-align: center;
+    // padding-bottom: 300px;
+    // padding-top: 200px;
+    background: url('https://img.freepik.com/vector-gratis/fondo-lineas-movimiento-velocidad-horizontal-azul_1017-36705.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 
     .img-welcome-to {
         width: 70%;
         text-align: center;
         svg{
+            width: 100%;
+        }
+        img{
             width: 100%;
         }
     }
@@ -33,9 +41,11 @@ section[id="section-welcome"] {
             font-family: "Playfair Display", serif;
             font-weight: 400;
             font-style: normal;
+            color: #f2f2f2;
         }
         p{
             font-size: 1rem;
+            display: none;
         }
     }
 
@@ -47,6 +57,9 @@ section[id="section-welcome"] {
             text-align: center;
             svg{
                 width: 100%;
+            }
+            img{
+                width: 70%;
             }
         }
 
